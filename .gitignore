@@ -59,3 +59,11 @@ typings/
 
 # next.js build output
 .next
+
+
+##########################################################
+
+# build outputs
+outside-cli-linux
+outside-cli-win.exe
+outside-cli-macos

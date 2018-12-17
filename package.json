@@ -1,16 +1,45 @@
 {
   "name": "outside-cli",
   "version": "1.0.0",
-  "license": "MIT",
+  "license": "GNU",
+  "description": "so ?!",
+  "author": {
+    "name": "Ashar Dweedar",
+    "email": "Ashar.Dweedar@gmail.net",
+    "url": "https://github.com/AsharDweedar"
+  },
+  "keywords": [
+    "argv",
+    "getopt",
+    "parser",
+    "optimist"
+  ],
+  "man": "./man/main.1",
+  "homepage": "https://github.com/AsharDweedar/cli-with-node/blob/master/README.md",
+  "preferGlobal" : true,
+  "bugs": {
+    "url": "https://github.com/AsharDweedar/cli-with-node/issues"
+  },
+  "main": "index.js",
   "bin": {
     "outside": "bin/outside"
   },
-  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/substack/minimist.git"
+  },
+  "scripts": {
+    "start" : "node bin/outside",
+    "build": "pkg"
+  },
   "devDependencies": {},
   "dependencies": {
     "minimist": "^1.2.0"
   },
   "pkg": {
     "scripts": "./**/*.js"
+  },
+  "engines": {
+    "node": ">=v8.0.0"
   }
 }
