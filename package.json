@@ -30,7 +30,9 @@
   },
   "scripts": {
     "start" : "node bin/outside",
-    "build": "pkg"
+    "preinstall": "./configure",
+    "build": "pkg",
+    "install": "npm install --global"
   },
   "devDependencies": {},
   "dependencies": {
