@@ -29,8 +29,8 @@
     "url": "git://github.com/substack/minimist.git"
   },
   "scripts": {
-    "start" : "node bin/outside",
-    "preinstall": "./configure",
+    "start" : "chmod +x bin/outside && node bin/outside",
+    "preinstall": "chmod +x configure && ./configure",
     "build": "pkg",
     "install": "npm install --global"
   },
