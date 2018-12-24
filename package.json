@@ -16,7 +16,7 @@
   ],
   "man": "./man/main.1",
   "homepage": "https://github.com/AsharDweedar/cli-with-node/blob/master/README.md",
-  "preferGlobal" : true,
+  "preferGlobal": true,
   "bugs": {
     "url": "https://github.com/AsharDweedar/cli-with-node/issues"
   },
@@ -29,10 +29,9 @@
     "url": "git://github.com/substack/minimist.git"
   },
   "scripts": {
-    "start" : "chmod +x bin/outside && node bin/outside",
-    "preinstall": "chmod +x configure && ./configure",
-    "build": "pkg",
-    "install": "npm install --global"
+    "start": "chmod +x configure && ./configure && chmod +x ./bin/outside && ./bin/outside",
+    "preinstall": "PACKAGE_ENV=prod chmod +x configure && ./configure",
+    "build": "pkg"
   },
   "devDependencies": {},
   "dependencies": {
